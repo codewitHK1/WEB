@@ -1,0 +1,263 @@
+/* CSS Reset  */
+*{
+    margin: 0px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    padding: 0px;
+}
+html{
+    font-family: 'Baloo Bhai 2', cursive;
+    scroll-behavior: smooth;
+}
+/* CSS Variable  */
+:root{
+    --navbar-height:59px;
+}
+/* Navigation bar  */
+#navbar{
+    position: sticky;
+    display: flex;
+    align-items: center;
+    top: 0px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+}
+#navbar .menu-btn i{
+    color: #f2f2f2;
+    float: right;
+    margin: 5px 15px;
+    cursor: pointer;
+    font-size:30px ;
+    display: none;
+}
+#click{
+    display: none;
+}
+/* Navigation: Logo and Image  */
+#logo{
+   display: inline-block;
+    margin: 10px 34px;
+}
+#logo img{
+    height: 54px;
+    width: 54px;
+    margin: 2px 5px;
+    border-radius: 40px;
+}
+/* Navigation: List styling */
+
+#navbar ul{
+    display: flex;
+    position: relative;
+    left: 600px;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+#navbar ul li a {
+    color: white;
+    padding: 5px 12px;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    
+}
+#navbar ul li a:hover {
+    color:black;
+    background-color: white;
+}
+
+/* Home Section  */
+.header{
+    font-size: 3.5rem;
+    font-family: 'Luxurious Roman',
+    cursive;
+    padding:12 2px;
+    color: black;
+}
+#home{
+    display: flex;
+    height:100vh;
+    flex-direction: column;
+    padding: 5px 250px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before{
+    content: "";
+    background: url(/img/img2.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    opacity: .9;
+    box-shadow: 2px 5px 10px #1e1e1e ;
+}
+
+#home h1{
+    color: white;
+    text-align: center;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+/* services section  */
+#service-container{
+    height: 100vh;
+    margin-top: 10px;
+}
+#services1{
+    display: flex;
+    margin: 30px;
+    
+}
+#services1 .box{
+    box-shadow: 2px 5px 10px #1e1e1e ;
+    border: 2px solid green;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 23px;
+    background-color:#f2f2f2;
+}
+#services1 .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+    border-radius: 35px;
+    
+    
+}
+#services1 .box p{
+    font-family: serif, sans-serif;
+    
+}
+/* Client Section  */
+#client-section2{
+   height: 100vh;
+   margin: 0px;
+}
+#client-section2::before{
+    box-shadow: 2px 1px 25px #1e1e1e ;
+   content: "";
+   position: absolute;
+   background: url(/img/img2.jpg) no-repeat;
+   width: 100%;
+   margin: 0px;
+   height: 80%;
+   z-index: -1;
+   opacity: 0.7;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.client-item{
+    margin-top: 50px;
+    padding:5px 80px;
+}
+#clients img{
+    /* flex-grow: 3; */
+    height: 200px;
+    width: 225px;
+    border-radius: 25px;
+}
+
+/* Contact-section  */
+#contact{
+    position: relative;
+    margin: 30px 0;
+    height: 80vh;
+}
+#contact::before{
+    box-shadow: 2px 1px 5px #1e1e1e ;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("/img/contact.jpg") no-repeat center center/cover;
+    
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    border: none;
+
+    
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding:9px  22px;
+    margin-top: -25px;
+
+}
+
+/* Utility Classes  */
+.h-primary{
+    font-size: 2.5rem;
+    font-family: 'Luxurious Roman', cursive;
+    padding:12 2px;
+    color: black;
+    /* margin: 12px 0;*/
+    /* margin-bottom: 80px;  */
+    background-color: rgb(238, 231, 231);
+    box-shadow: 2px 1px 10px #1e1e1e ;
+}
+.h-secondery{
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 1.5rem;
+    padding: 12px;
+}
+.btn{
+    font-size: 2.3rem;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:rgb(7, 232, 30);
+    color: white;
+    margin: 17px 17px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-family: 'Baloo Bhai 2', cursive;
+   cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
